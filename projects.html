@@ -19,7 +19,7 @@
     <style>
       .collapsible {
       border-radius: 10px;
-      background-color: #397BB2;
+      background-color: #297cbc;
       color: white;
       cursor: pointer;
       padding: 18px;
@@ -29,6 +29,8 @@
       outline: none;
       font-size: 15px;
       margin-bottom: 5px;
+      
+
       }
 
       .active, .collapsible:hover {
@@ -37,10 +39,19 @@
 
       .content {
       padding: 0 18px;
-      display: none;
       overflow: hidden;
       background-color: #f1f1f1;
       border-radius:10px;
+      max-height: 1800px;
+      -webkit-transition: max-height 0.5s; 
+      -moz-transition: max-height 0.5s; 
+      -ms-transition: max-height 0.5s; 
+      -o-transition: max-height 0.5s; 
+      transition: max-height 0.5s;
+      }
+
+      .content.collapsed{
+      max-height: 0;
 
       }
 
@@ -135,7 +146,6 @@
     <div class="container">
       <button class="collapsible">CPSC 587: Animation - W2018</button>
       <div class="content">
-
 	<div class="tab">
 	  <button class="tablinks" onclick="openCity(event, 'assign1')" id="defaultOpen">Assignment 1</button>
 	  <button class="tablinks" onclick="openCity(event, 'assign2')">Assignment 2</button>
@@ -234,15 +244,17 @@
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
+      // Start with content collpased
+      for (i = 0; i < coll.length; i++) {
+		      var content = coll[i].nextElementSibling;
+		      content.classList.toggle('collapsed');
+		      }
+
       for (i = 0; i < coll.length; i++) {
 		      coll[i].addEventListener("click", function() {
 		      this.classList.toggle("active");
 		      var content = this.nextElementSibling;
-		      if (content.style.display === "block") {
-		      content.style.display = "none";
-		      } else {
-		      content.style.display = "block";
-		      }
+		      content.classList.toggle('collapsed');
 		      });
 		      }
 
