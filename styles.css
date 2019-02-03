@@ -1,3 +1,6 @@
+.blurb{
+    font-size:14pt;
+}
 .imgbox {
     display: grid;
     height: 100%;
@@ -102,6 +105,8 @@
     padding: 6px 12px;
     height: auto;
     border-top: none;
+    padding-bottom: 1cm;
+
 }
 
 
