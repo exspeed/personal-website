@@ -66,7 +66,7 @@
 	    </div>
 	  </div>
 	  <div id="assign2" class="tabcontent">
-	    <h3>Blender</h3>
+	    <h3>Blender - Powerline</h3>
 	    <div class="row">
 	      <div class="col-lg-4 col-md-6 col-sm-4 col-xs-12">
 		<br>This is a clip is about an inamiated object, in this case a powerline and a street light showing human expression. The powerline is intrigued about the street light and shows initial shock. Throughout the scene it becomes happy and sad when interacting with the street light. <br><br>
@@ -120,16 +120,48 @@
 	</div>
       </div>
 
-
       <div class="container">
-	<button class="collapsible">SENG 301: Project Flip 9 - W2015</button>
+	<button class="collapsible"> CPSC 481: Human Computer Interaction - W2018</button>
 	<div class="content">
 
 	    <div class="row" style="margin:25px 0px">
+	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h3>Course Selector</h3>
+	      </div>
+	      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		The intent of the project was to create a high fidelity prototype project written in C# wpf. <br> <br>
+		Our proposed system was to helps students create their courses and view their university degree. It gives the user relevant information about available courses. Addtionally, the program help users to visualize their semesters by displaying their current classes.
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination">
+		    <li class="page-item" onclick="nextImage('courseimage','project-res/c481/MainScreen.png')"><a class="page-link" >1</a></li>
+		    <li class="page-item" onclick="nextImage('courseimage','project-res/c481/ClassExpand.png')"><a class="page-link" >2</a></li>
+		    <li class="page-item"onclick="nextImage('courseimage','project-res/c481/FilteringShot.png')"><a class="page-link">3</a></li>
+		    <li class="page-item" onclick="nextImage('courseimage','project-res/c481/Review.png')"><a class="page-link">4</a></li>
+		  </ul>
+		</nav>
 
+	      </div>
+	      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+		<img  class="image-project img-circle" src='project-res/c481/MainScreen.png' id="courseimage" alt="Screenshot of Course Selector">
+
+	      </div>
+
+	    </div>
+
+	</div>
+      </div>
+
+      <div class="container">
+	<button class="collapsible">SENG 301: Software Analysis and Design - W2015</button>
+	<div class="content">
+
+	    <div class="row" style="margin:25px 0px">
+	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h3>Flip 9</h3>
+	      </div>
 	      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-	      <h3>Flip 9</h3>
-		<br> An Andriod app puzzle game that was inspired by a problem found on  <a href="https://open.kattis.com/problems/flipfive">Kattis: Flip Five</a>. When clicking on a tile, the tile and the tile's neighbors will flip colors. The goal of the game is to make all the tiles have the same color. <br><br>The APK can be found in the <a href="https://play.google.com/store/apps/details?id=com.labrats.android.flip9&hl=en">PlayStore.</a>
+
+		<br> An Andriod app puzzle game that was inspired by a problem found on  <a href="https://open.kattis.com/problems/flipfive">Kattis: Flip Five</a>. When clicking on a tile, the tile and the tile's neighbors will flip colors. The goal of the game is to make all the tiles have the same color. <br><br>The APK can be found on the <a href="https://play.google.com/store/apps/details?id=com.labrats.android.flip9&hl=en">PlayStore.</a>
 <br>
 	      </div>
 	      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -140,6 +172,7 @@
 
 	</div>
       </div>
+
 
       <p class="bot-padding"></p>
       <script>
@@ -158,6 +191,13 @@
 		content.classList.toggle('collapsed');
 	    });
 	}
+	
+
+	function nextImage(imageId, path){
+	    document.getElementById("courseimage").src = path;
+	}
+	
+
 
 
 	function openCity(evt, cityName) {
