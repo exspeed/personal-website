@@ -42,6 +42,40 @@
       </div>
 
       <div class="container">
+	<button class="collapsible"> CPSC 591: Rendering - W2019</button>
+	<div class="content">
+
+	    <div class="row" style="margin:25px 0px">
+	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h3>Non-Photorealisic Render</h3>
+	      </div>
+	      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		The goal of the project was to explore some real-time artistic renders. We chose to do 3: Toon Shading, Featured Lines, and Hatching. <br><br>
+		In toon shading, the model appears to have a step shading rather than having shading gradient. While featured lines captures the most
+		interesting features of an object and creates an outline. And lastly, hatching is an artistic technique that shades with closely drawn parallel lines.
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination">
+		    <li class="page-item" onclick="nextImage('renderimage','project-res/c591/fruits-toon.png')"><a class="page-link" >1</a></li>
+		    <li class="page-item" onclick="nextImage('renderimage','project-res/c591/anime-toon.png')"><a class="page-link" >2</a></li>
+		    <li class="page-item" onclick="nextImage('renderimage','project-res/c591/pose-lines.png')"><a class="page-link">3</a></li>
+		    <li class="page-item" onclick="nextImage('renderimage','project-res/c591/anime-hatching.png')"><a class="page-link">4</a></li>
+		    <li class="page-item" onclick="nextImage('renderimage','project-res/c591/allshot.png')"><a class="page-link">5</a></li>
+		  </ul>
+		</nav>
+
+	      </div>
+	      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+		<img  class="image-project img-circle" src='project-res/c591/fruits-toon.png' id="renderimage" alt="Screenshot of Rendering">
+
+	      </div>
+
+	    </div>
+
+	</div>
+      </div>
+
+
+      <div class="container">
 	<button class="collapsible">CPSC 587: Animation - W2018</button>
 	<div class="content">
 	  <div class="tab">
@@ -121,7 +155,38 @@
       </div>
 
       <div class="container">
-	<button class="collapsible"> CPSC 481: Human Computer Interaction - W2018</button>
+	<button class="collapsible"> CPSC 589: Modelling - W2018</button>
+	<div class="content">
+
+	    <div class="row" style="margin:25px 0px">
+	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h3>Sketch-based Model Cutting and Scraping</h3>
+	      </div>
+	      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		This programs allow the user to create a sketch on the screen and apply a cut to the model. <br><br>
+		When the user draws the a sketch, the program allow the user to create a smooth B-spline curve. Next, the program creates a triangle prism from
+		the sketch and is projected onto the model. Lastly, the program does boolean difference between the model and the carving to product the output. 
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination">
+		    <li class="page-item" onclick="nextImage('modelimage','project-res/c589/cone.png')"><a class="page-link" >1</a></li>
+		    <li class="page-item" onclick="nextImage('modelimage','project-res/c589/donut.png')"><a class="page-link" >2</a></li>
+		    <li class="page-item"onclick="nextImage('modelimage','project-res/c589/cube.png')"><a class="page-link">3</a></li>
+		  </ul>
+		</nav>
+
+	      </div>
+	      <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12">
+		<img  class="image-project img-circle" src='project-res/c589/cone.png' id="modelimage" alt="Screenshot of Course Selector">
+
+	      </div>
+
+	    </div>
+
+	</div>
+      </div>
+
+      <div class="container">
+	<button class="collapsible"> CPSC 591: Human Computer Interaction - W2018</button>
 	<div class="content">
 
 	    <div class="row" style="margin:25px 0px">
@@ -150,6 +215,8 @@
 
 	</div>
       </div>
+
+
 
       <div class="container">
 	<button class="collapsible">SENG 301: Software Analysis and Design - W2015</button>
@@ -194,7 +261,7 @@
 	
 
 	function nextImage(imageId, path){
-	    document.getElementById("courseimage").src = path;
+	    document.getElementById(imageId).src = path;
 	}
 	
 
